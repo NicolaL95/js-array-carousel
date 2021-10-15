@@ -48,7 +48,32 @@ height: 100vh;
     content: " ";
 }
 
-/* DIMENSIONI */
-.image_container{
-    height: 50px;
+.sel_border{
+    border: 2px solid lightgrey;
+    box-sizing: content-box;
 }
+
+.arrow{
+ margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+ 
+}
+
+.a_bot{
+bottom: 0;
+}
+   
+.arrow button{
+    border: 0;
+    border-radius: 20px;
+    background-color: darkgrey;
+}
+
+/* DIMENSIONI */
+/* .image_container{
+    height: 50px;
+} */

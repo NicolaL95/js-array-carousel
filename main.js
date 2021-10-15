@@ -21,3 +21,13 @@ const text = [
     'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
     'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
 ]
+
+let img_dett = [];
+
+for (let index = 0; index < 5; index++) {
+    img_dett[index] = items[index], title[index], text[index];
+
+
+}
+
+console.log(img_dett)
