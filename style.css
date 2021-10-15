@@ -2,6 +2,8 @@
     width: 1000px;
 }
 
+/* UTILITY */
+
 .mw_900{
     max-width: 900px!important;
 }
@@ -10,9 +12,43 @@
 height: 332px;
 }
 
+
+
+.mb_2px{
+margin-bottom: 2px;
+}
+
+/* POSIZIONAMENTO */
 .center_pos{
 height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.right_0{
+    right: 0;
+    text-align: right;
+    margin-right: 15px;
+}
+
+/* OSCURAMENTO */
+
+.obscured{
+    position: relative;
+}
+
+.obscured::before{
+    position: absolute; 
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.5); 
+    content: " ";
+}
+
+/* DIMENSIONI */
+.image_container{
+    height: 50px;
 }
