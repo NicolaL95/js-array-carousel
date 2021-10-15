@@ -9,10 +9,12 @@
 }
 
 .h_main{
-height: 332px;
+height: 352px;
 }
 
-
+.image_container img{
+    height: calc(350px / 5);
+}
 
 .mb_2px{
 margin-bottom: 2px;
@@ -49,7 +51,7 @@ height: 100vh;
 }
 
 .sel_border{
-    border: 2px solid lightgrey;
+    border: 1px solid lightgrey;
     box-sizing: content-box;
 }
 

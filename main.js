@@ -57,12 +57,12 @@ function change_image_top() {
         img_finder = 5;
     }
     else {
-        let sel_el = document.querySelector(`.image_container-${img_finder - 1}`);
+        let sel_el = document.querySelector(`.image_container-${img_finder + 1}`);
         sel_el.classList.remove("sel_border");
         sel_el.classList.add("obscured");
     }
     img_finder = img_finder - 1;
-    sel_el = document.querySelector(`.image_container-${img_finder - 1}`);
+    sel_el = document.querySelector(`.image_container-${img_finder + 1}`);
     sel_el.classList.add("sel_border");
     sel_el.classList.remove("obscured");
 
@@ -70,5 +70,3 @@ function change_image_top() {
     document.getElementById("title_desc").innerHTML = title[img_finder];
     document.getElementById("img_main").src = items[img_finder];
 }
-
-/* img="${items[i]}" */
