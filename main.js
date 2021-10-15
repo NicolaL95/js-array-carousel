@@ -44,8 +44,7 @@ for (let index = 0; index < items.length; index++) {
 
 
 let img_finder = 0;
-
-function change_image_bottom() {
+document.getElementById("go_bottom").addEventListener("click", function () {
     if (img_finder == 4) {
         let sel_el = document.querySelector(`.image_container-${5}`);
         sel_el.classList.remove("sel_border");
@@ -65,9 +64,10 @@ function change_image_bottom() {
     document.getElementById("text_desc").innerHTML = text[img_finder];
     document.getElementById("title_desc").innerHTML = title[img_finder];
     document.getElementById("img_main").src = items[img_finder];
-}
+});
 
-function change_image_top() {
+
+document.getElementById("go_top").addEventListener("click", function () {
     if (img_finder == 0) {
         let sel_el = document.querySelector(`.image_container-${1}`);
         sel_el.classList.remove("sel_border");
@@ -87,4 +87,5 @@ function change_image_top() {
     document.getElementById("text_desc").innerHTML = text[img_finder];
     document.getElementById("title_desc").innerHTML = title[img_finder];
     document.getElementById("img_main").src = items[img_finder];
-}
+});
+
