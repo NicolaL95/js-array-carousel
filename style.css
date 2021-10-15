@@ -1,0 +1,18 @@
+.carousel_container{
+    width: 1000px;
+}
+
+.mw_900{
+    max-width: 900px!important;
+}
+
+.h_main{
+height: 332px;
+}
+
+.center_pos{
+height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
