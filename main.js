@@ -22,12 +22,53 @@ const text = [
     'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
 ]
 
-let img_dett = [];
-
-for (let index = 0; index < 5; index++) {
-    img_dett[index] = items[index], title[index], text[index];
 
 
+
+let img_finder = 0;
+
+function change_image_bottom() {
+    if (img_finder == 4) {
+        let sel_el = document.querySelector(`.image_container-${5}`);
+        sel_el.classList.remove("sel_border");
+        sel_el.classList.add("obscured");
+        img_finder = -1;
+    }
+    else {
+        let sel_el = document.querySelector(`.image_container-${img_finder + 1}`);
+        sel_el.classList.remove("sel_border");
+        sel_el.classList.add("obscured");
+    }
+    img_finder = img_finder + 1;
+    sel_el = document.querySelector(`.image_container-${img_finder + 1}`);
+    sel_el.classList.add("sel_border");
+    sel_el.classList.remove("obscured");
+
+    document.getElementById("text_desc").innerHTML = text[img_finder];
+    document.getElementById("title_desc").innerHTML = title[img_finder];
+    document.getElementById("img_main").src = items[img_finder];
 }
 
-console.log(img_dett)
+function change_image_top() {
+    if (img_finder == 0) {
+        let sel_el = document.querySelector(`.image_container-${1}`);
+        sel_el.classList.remove("sel_border");
+        sel_el.classList.add("obscured");
+        img_finder = 5;
+    }
+    else {
+        let sel_el = document.querySelector(`.image_container-${img_finder - 1}`);
+        sel_el.classList.remove("sel_border");
+        sel_el.classList.add("obscured");
+    }
+    img_finder = img_finder - 1;
+    sel_el = document.querySelector(`.image_container-${img_finder - 1}`);
+    sel_el.classList.add("sel_border");
+    sel_el.classList.remove("obscured");
+
+    document.getElementById("text_desc").innerHTML = text[img_finder];
+    document.getElementById("title_desc").innerHTML = title[img_finder];
+    document.getElementById("img_main").src = items[img_finder];
+}
+
+/* img="${items[i]}" */
