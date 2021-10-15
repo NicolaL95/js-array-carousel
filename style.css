@@ -11,14 +11,18 @@
 .mw_900{
     max-width: 900px!important;
 }
+.static_dim{
+max-width: 700px;
+    min-width: 700px;
+}
 
 .h_main{
-    height: 419px;
+    height: 351px;
 }
-/* 
+
 .image_container img{
-    height: calc(350px / 5);
-} */
+ height: calc(349px / 5);
+} 
 
 .mb_2px{
 margin-bottom: 2px;
@@ -86,4 +90,6 @@ font-size: 1.3rem;
 
 .text_desc{
     font-weight: 700;
+        font-size: 1.1rem;
+    margin-left: 20px;
 }
