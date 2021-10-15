@@ -22,7 +22,25 @@ const text = [
     'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
 ]
 
+let element;
+let container;
 
+for (let index = 0; index < items.length; index++) {
+    if (index == 0) {
+        element = `<img id="img_main" class="w-100 h_main" src="./${items[index]}" alt=""></img>`
+        container = document.querySelector(".big_image_container")
+        container.innerHTML += element;
+        element = `<p id = "title_desc" class="mb_2px fw-bolder" >${title[index]}</p >`
+        container = document.querySelector(".desc_container")
+        container.innerHTML += element;
+        element = ` <p id="text_desc">${text[index]}</p>`
+        container = document.querySelector(".desc_container")
+        container.innerHTML += element;
+    }
+    element = `<img class="w-100" src="./${items[index]}" alt="immagine ${index + 1}">`;
+    container = document.querySelector(`.image_container-${index + 1}`);
+    container.innerHTML += element;
+}
 
 
 let img_finder = 0;

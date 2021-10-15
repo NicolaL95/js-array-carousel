@@ -1,20 +1,24 @@
 .carousel_container{
-    width: 1000px;
+    width:1000px;
 }
 
 /* UTILITY */
+
+.image_container{
+    height: 100%;
+}
 
 .mw_900{
     max-width: 900px!important;
 }
 
 .h_main{
-height: 352px;
+    height: 419px;
 }
-
+/* 
 .image_container img{
     height: calc(350px / 5);
-}
+} */
 
 .mb_2px{
 margin-bottom: 2px;
@@ -75,7 +79,11 @@ bottom: 0;
     background-color: darkgrey;
 }
 
-/* DIMENSIONI */
-/* .image_container{
-    height: 50px;
-} */
+/* FORMATTAZIONE TESTO */
+.font_1_3{
+font-size: 1.3rem;
+}
+
+.text_desc{
+    font-weight: 700;
+}
